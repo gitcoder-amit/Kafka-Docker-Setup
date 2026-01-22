@@ -2,7 +2,7 @@
 
 - Clone this repository
 
-- Move inside the cloned directory and execute the following command
+- Move inside the cloned directory and execute the following command(Make Sure Docker is running.)
 
 ```
 
