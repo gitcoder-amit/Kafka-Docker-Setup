@@ -40,3 +40,9 @@ docker exec -it -w /opt/kafka/bin broker sh
 ./kafka-console-producer.sh --topic sample-topic --bootstrap-server broker:29092
 ```
 
+- We can see description of a topic or all topic,
+```
+./kafka-topics.sh --bootstrap-server broker:29092 --describe --topic sample-topic
+./kafka-topics.sh --bootstrap-server broker:29092 --describe
+```
+
