@@ -8,3 +8,9 @@
 
 docker compose up -d
 ```
+
+- Now Once the container is Up, use the following command to enter the kafka shell running inside the kafka container
+
+```
+docker exec -it -w /opt/kafka/bin broker sh
+```
