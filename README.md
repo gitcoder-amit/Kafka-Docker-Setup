@@ -27,3 +27,16 @@ docker exec -it -w /opt/kafka/bin broker sh
 ```
 ./kafka-topics.sh --bootstrap-server broker:29092 --list
 ```
+
+- To start a consumer on a topic(Make sure use other terminal for this otherwise we will not recognise the differences),
+
+```
+./kafka-console-consumer.sh --topic sample-topic --from-beginning --bootstrap-server broker:29092
+```
+
+- To produce the data in the topic,
+
+```
+./kafka-console-producer.sh --topic sample-topic --bootstrap-server broker:29092
+```
+
