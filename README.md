@@ -14,8 +14,16 @@ docker compose up -d
 ```
 docker exec -it -w /opt/kafka/bin broker sh
 ```
-- Creating Topic Command but we dont need to remember due to if we are working with Python we just need to find which particular function will does that
+- Creating Topic Command but we dont need to remember due to if we are working with Python we just need to find which particular function will does that here we are creating 2 topics using shell
 
 ```
-./kafka-topics.sh --create --topic sample-topic --bootstrap-server broker:29092
+./kafka-topics.sh --create --topic sample-topic --bootstrap-server broker:29092   -> 
+./kafka-topics.sh --create --topic user-topic --bootstrap-server broker:29092
+
+```
+
+- To List down all the topics
+
+```
+./kafka-topics.sh --bootstrap-server broker:29092 --list
 ```
